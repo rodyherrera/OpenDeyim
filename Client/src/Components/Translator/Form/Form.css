@@ -1,0 +1,135 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+#Translator-Box #Exchange-Languages-Icon-Box{
+    margin: 0 1rem;
+}
+
+#Translator-Box #Translation-Result-Box{
+    margin: 1rem 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+}
+
+#Translator-Box > form > :last-child .MuiButtonBase-root{
+    border: 1px solid rgb(97 96 96 / 50%) !important;
+}
+
+#Translator-Box > form > :last-child .Mui-disabled{
+    color: rgb(0 0 0 / 58%);
+}
+
+#Translator-Box > form > :last-child .MuiButtonBase-root:hover{
+    border-color: #000000 !important;
+}
+
+
+#Translator-Box #Translation-Result-Box > div{
+    width: 45%;
+}
+
+#Translator-Box #Translation-Result-Box .MuiOutlinedInput-root.Mui-disabled > textarea{  
+    color: rgba(0, 0, 0, 60%);
+    -webkit-text-fill-color: unset;
+}
+
+#Translator-Box form .Loader{
+    margin-top: 2rem;
+}
+
+#Translation-Option-Box .MuiFormControl-root{
+    min-width: 150px;
+}
+
+#Translation-Option-Box{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    #Translator-Box{
+        margin: 2rem 0;
+    }
+
+    #Translator-Box #Translation-Result-Box,
+    #Translator-Box #Exchange-Languages-Icon-Box{
+        flex-direction: column;
+        max-height: unset;
+        height: unset;
+        margin: 0;
+    }
+
+    #Translator-Box #Translation-Result-Box > div,
+    #Translation-Option-Box .MuiFormControl-root{
+        width: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #Translator-Box #Translation-Result-Box .MuiInputBase-input,
+    #Translator-Box #Translation-Option-Box .MuiInputBase-input,
+    #Translator-Box #Translation-Result-Box .MuiSelect-select{
+        margin: 0;
+        font-size: .95rem !important;
+        padding-bottom: 0;
+    }
+
+    #Translator-Box #Translation-Option-Box .MuiInputBase-input{
+        padding-bottom: 8.5px !important;
+    }
+    
+    #Translator-Box form > :last-child button{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #Translator-Box form > :last-child > :first-child{
+        font-size: .8rem !important;
+    }
+    
+    #Translation-Option-Box{
+        justify-content: space-between;
+    }
+
+    #Translator-Box form .Loader{
+        margin: 1rem auto;
+        width: 100px;
+    }
+
+    #Translation-Option-Box .MuiFormControl-root{
+        width: 40%;
+        min-width: unset;
+    }
+
+    #Translation-Option-Box{
+        margin-bottom: 1rem;
+    }
+}

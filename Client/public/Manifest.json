@@ -1,0 +1,203 @@
+{
+  "dir": "auto",
+  "short_name": "OpenDeyim",
+  "name": "OpenDeyim - Modern Open Source Translation Software",
+  "lang": "en-US",
+  "description": "A free, modern, self-hosted and open source translation service that instantly translates phrases, words and web pages into more than 30 languages. Use our API or bindings and experiment with OpenDeyim.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "related_applications": [
+      {
+          "platform": "web"
+      }
+  ],
+  "icons": [
+    {
+      "src": "Images/Icons/Favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+        "src": "Images/Icons/Apple/20x20",
+        "type": "image/png",
+        "sizes": "20x20"
+    },
+    {
+        "src": "Images/Icons/Apple/29x29",
+        "type": "image/png",
+        "sizes": "29x29"
+    },
+    {
+        "src": "Images/Icons/Favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+    },
+    {
+        "src": "Images/Icons/Android/36x36.png",
+        "type": "image/png",
+        "sizes": "36x36"
+    },
+    {
+        "src": "Images/Icons/Apple/40x40.png",
+        "type": "image/png",
+        "sizes": "40x40"
+    },
+    {
+        "src": "Images/Icons/Android/48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+    },
+    {
+        "src": "Images/Icons/Apple/50x50.png",
+        "type": "image/png",
+        "sizes": "50x50"
+    },
+    {
+        "src": "Images/Icons/Apple/55x55.png",
+        "type": "image/png",
+        "sizes": "55x55"
+    },
+    {
+        "src": "Images/Icons/Apple/57x57.png",
+        "type": "image/png",
+        "sizes": "57x57"
+    },
+    {
+        "src": "Images/Icons/Apple/58x58.png",
+        "type": "image/png",
+        "sizes": "58x58"
+    },
+    {
+        "src": "Images/Icons/Apple/60x60.png",
+        "type": "image/png",
+        "sizes": "60x60"
+    },
+    {
+        "src": "Images/Icons/Apple/64x64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+    },
+    {
+        "src": "Images/Icons/Apple/66x66.png",
+        "type": "image/png",
+        "sizes": "64x64"
+    },
+    {
+        "src": "Images/Icons/Android/72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+    },
+    {
+        "src": "Images/Icons/Apple/76x76.png",
+        "type": "image/png",
+        "sizes": "76x76"
+    },
+    {
+        "src": "Images/Icons/Apple/80x80.png",
+        "type": "image/png",
+        "sizes": "80x80"
+    },
+    {
+        "src": "Images/Icons/Apple/87x87.png",
+        "type": "image/png",
+        "sizes": "87x87"
+    },
+    {
+        "src": "Images/Icons/Apple/88x88.png",
+        "type": "image/png",
+        "sizes": "88x88"
+    },
+    {
+        "src": "Images/Icons/Apple/92x92.png",
+        "type": "image/png",
+        "sizes": "92x92"
+    },
+    {
+        "src": "Images/Icons/Android/96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+    },
+    {
+        "src": "Images/Icons/Apple/100x100.png",
+        "type": "image/png",
+        "sizes": "100x100"
+    },
+    {
+        "src": "Images/Icons/Apple/102x102.png",
+        "type": "image/png",
+        "sizes": "102x102"
+    },
+    {
+        "src": "Images/Icons/Apple/114x114.png",
+        "type": "image/png",
+        "sizes": "114x114"
+    },
+    {
+        "src": "Images/Icons/Apple/120x120.png",
+        "type": "image/png",
+        "sizes": "120x120"
+    },
+    {
+        "src": "Images/Icons/Apple/128x128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+    },
+    {
+        "src": "Images/Icons/Android/144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    },
+    {
+        "src": "Images/Icons/Apple/152x152.png",
+        "type": "image/png",
+        "sizes": "152x152"
+    },
+    {
+        "src": "Images/Icons/Apple/167x167.png",
+        "type": "image/png",
+        "sizes": "167x167"
+    },
+    {
+        "src": "Images/Icons/Apple/172x172.png",
+        "type": "image/png",
+        "sizes": "167x167"
+    },
+    {
+        "src": "Images/Icons/Apple/180x180.png",
+        "type": "image/png",
+        "sizes": "180x180"
+    },
+    {
+        "src": "Images/Icons/Apple/196x196.png",
+        "type": "image/png",
+        "sizes": "196x196"
+    },
+    {
+        "src": "Images/Icons/Android/192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "Images/Icons/Apple/216x216.png",
+        "type": "image/png",
+        "sizes": "216x216"
+    },
+    {
+        "src": "Images/Icons/Apple/256x256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+    },
+    {
+        "src": "Images/Icons/Apple/512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    },
+    {
+        "src": "Images/Icons/Apple/1024x1024.png",
+        "type": "image/png",
+        "sizes": "1024x1024"
+    }
+  ]
+}

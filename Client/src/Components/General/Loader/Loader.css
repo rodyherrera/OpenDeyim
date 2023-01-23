@@ -1,0 +1,73 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+@keyframes Loader-To-Right{
+    to{
+        transform: translateX(200%);
+    }
+}
+@keyframes Loader-Scale-Up{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+    
+.Loader{
+    --Loader-Height: calc(5rem / 7);
+    display: flex;
+    position: relative;
+}
+
+.Loader::before{
+    content: '';
+    position: absolute;
+}
+ 
+.Loader::before,
+.Loader > span{
+    display: block;
+    width: var(--Loader-Height);
+    height: var(--Loader-Height);
+    border-radius: 50%;
+    background-color: #222222;
+    animation-name: Loader-To-Right;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.Loader > span:nth-child(even){
+    visibility: hidden;
+}
+
+.Loader > span:first-child{
+    animation-name: Loader-Scale-Up;
+}
+
+.Loader > span:last-child{
+    animation-name: Loader-Scale-Up;
+    animation-direction: reverse;
+}

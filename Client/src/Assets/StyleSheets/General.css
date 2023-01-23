@@ -1,0 +1,109 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    box-sizing: border-box;
+    cursor: none !important;
+}
+
+.MuiPaper-root{
+    max-height: 300px !important;
+}
+
+#OpenDeyim-Root, 
+body, 
+html{
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+    letter-spacing: -0.003em !important;
+    line-height: 24px !important;
+}
+
+/*
+    main -> margin-top: 112px?...
+    >> document.getElementsByTagName('header')[0].clientHeight // ! 112px.
+*/
+main{
+    max-width: 1520px;
+    margin: 112px auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: #c9c8c8;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b2b2;
+}
+
+.Desktop-Box{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .Desktop-Box{
+        display: none;
+    }
+
+    p{
+        font-size: .85rem;
+    }
+
+    main{
+        margin-top: 62px;
+    }
+}

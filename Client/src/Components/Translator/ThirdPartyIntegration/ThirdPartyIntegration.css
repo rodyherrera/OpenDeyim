@@ -1,0 +1,132 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+#Third-Party-Integration-Box #Code-Blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div{
+    width: 45%;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div > :last-child{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div > :last-child > h3,
+#Third-Party-Integration-Box #Heading-Box > h2{
+    font-size: 2rem;
+    max-width: 400px;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div:last-child > :last-child{
+    text-align: end;
+    align-items: end;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div:last-child > :last-child > h3{
+    float: right;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div > :last-child > p{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div > :first-child{
+    box-shadow: 0 0 2px 0 #7d7d7d;
+    width: 100%;
+    padding: 0;
+}
+
+#Third-Party-Integration-Box #Blue-Blob-Box{
+    position: absolute;
+    filter: blur(14rem);
+    top: 102rem;
+    right: 10rem;
+    transform: rotate(45deg);
+    width: 300px;
+}
+
+#Third-Party-Integration-Box #Heading-Box > p{
+    margin-top: 1rem;
+    max-width: 700px;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div > :first-child > span{
+    white-space: pre !important;
+    display: block !important;
+    line-height: 1.4rem !important;
+}
+
+#Third-Party-Integration-Box #Code-Blocks > div > :first-child > span::-webkit-scrollbar{
+    height: 4px;
+}
+
+@media screen and (max-width: 768px){
+    #Third-Party-Integration-Box #Code-Blocks{
+        flex-direction: column;
+        max-height: unset;
+        height: unset;
+    }
+
+    #Third-Party-Integration-Box #Heading-Box{
+        margin: 2rem 0;
+    }
+
+    #Third-Party-Integration-Box #Code-Blocks > :first-child > :first-child > span{
+        font-size: .8rem;
+    }
+
+    #Third-Party-Integration-Box #Code-Blocks > div:last-child > :last-child{
+        text-align: start;
+        align-items: flex-start;
+    }
+    
+    #Third-Party-Integration-Box #Code-Blocks > div > :last-child > h3,
+    #Third-Party-Integration-Box #Heading-Box > h2{
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+
+    #Third-Party-Integration-Box #Code-Blocks > div > :last-child{
+        margin: 2rem 0;
+    }
+
+    #Third-Party-Integration-Box #Code-Blocks > div,
+    #Third-Party-Integration-Box #Code-Blocks > :first-child > :first-child{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #Third-Party-Integration-Box #Code-Blocks > div > :last-child > p,
+    #Third-Party-Integration-Box #Heading-Box > p{
+        margin-top: .5rem;
+    }
+}

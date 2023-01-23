@@ -1,0 +1,94 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+@keyframes Success-Alert-Animation{
+    20%{
+        transform: scale(0.4);
+        box-shadow: 0 0 0 0 rgba(34, 34, 34, 0.2);
+    }
+
+    40%{
+        transform: scale(1.2);
+    }
+
+    50%{
+        transform: scale(1);
+        box-shadow: 0 0 0 40px rgba(34, 34, 34, 0.2);
+    }
+
+    70%{
+        box-shadow: 0 0 0 90px rgba(34, 34, 34, 0);
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes Success-Alert-Tick{
+    0%, 25%{
+        opacity: 0;
+    }
+
+    50%, 100%{
+        opacity: 1;
+    }
+}
+
+#Success-Alert-Box{
+    animation: 1s Success-Alert-Animation linear forwards;
+    background-color: #222222;
+    width: 80px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#Success-Alert-Box > *{
+    opacity: 0;
+    animation: 1s Success-Alert-Tick linear forwards;
+}
+
+#Success-Alert-Box > :first-child{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px){
+    #Success-Alert-Box{
+        right: 0.5rem;
+        width: 50px;
+        bottom: 0.5rem;
+    }
+}

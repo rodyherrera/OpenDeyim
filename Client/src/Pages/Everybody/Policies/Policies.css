@@ -1,0 +1,125 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+#Policies-Main{
+    padding: 2.5rem;
+    max-width: 1000px;
+}
+
+#Policies-Main #Heading-Box{
+    margin-bottom: 4rem;
+}
+
+#Policies-Main #Heading-Box > h2{
+    font-size: 2.5rem;
+    max-width: 90%;
+}
+
+#Policies-Main #Heading-Box > h2,
+#Policies-Main .Policies-Box > :first-child{
+    margin-bottom: .5rem;
+}
+
+#Policies-Main .Policies-Box:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+#Policies-Main .Policies-Box > :first-child{
+    font-size: 1.2rem;
+}
+
+#Policies-Main #External-Reference-Box,
+#Policies-Main #External-Reference-Box article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Policies-Main #External-Reference-Box{
+    width: 100%;
+    height: auto;
+}
+
+#Policies-Main #External-Reference-Box article{
+    margin-bottom: 1rem;
+}
+
+#Policies-Main #External-Reference-Box article:hover span{
+    opacity: .7;
+}
+
+#Policies-Main #External-Reference-Box article:not(:last-child){
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    #Policies-Main #External-Reference-Box article:not(:last-child){
+        margin-bottom: .5rem;
+        margin-right: 0;
+    }
+
+    #Policies-Main #External-Reference-Box article {
+        align-items: center;
+        margin-bottom: 1rem;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #Policies-Main{
+        padding: 1rem;
+    }
+
+    #Policies-Main #Heading-Box > h2{
+        max-width: 100%;
+    }
+
+    #Policies-Main .Policies-Box > :first-child,
+    #Policies-Main #Heading-Box > h2{
+        font-size: 1.4rem;
+    }
+
+    #Policies-Main .Policies-Box > :first-child{
+        max-width: 90%;
+    }
+
+    #Policies-Main #Heading-Box{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    #Policies-Main #External-Reference-Box > article > :last-child{
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        margin-left: 0.5rem;
+        font-size: .8rem;
+    }
+
+    #Policies-Main #External-Reference-Box > article svg{
+        font-size: 1.2rem !important;
+    }
+
+    #Policies-Main p{
+        font-size: .9rem;
+    }
+}

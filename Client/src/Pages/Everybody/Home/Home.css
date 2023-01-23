@@ -1,0 +1,165 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+#Home-Main{
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#Home-Main #Light-Blue-Blob-Box{
+    position: absolute;
+    filter: blur(14rem);
+    top: 7rem;
+    left: 0;
+    transform: rotate(45deg);
+    width: 500px;
+}
+
+#Home-Main #Presentation-Box,
+#Home-Main #Heading-Box > div > :last-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Home-Main #Presentation-Box{
+    margin-bottom: 3rem;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+#Home-Main #Presentation-Box > #Heading-Box > :first-child > :first-child{
+    max-width: 650px;
+}
+
+#Home-Main #Presentation-Box > #Heading-Box h1{
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+#Home-Main #Heading-Box > div > :last-child{
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+#Home-Main #Heading-Box .Feature-Box{
+    max-width: 42%;
+}
+
+#Home-Main #Heading-Box .Feature-Box > :first-child > :nth-child(2){
+    font-size: 1.5rem;
+    letter-spacing: -.029375rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+#Home-Main #Heading-Box .Feature-Box > :last-child{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    opacity: .8;
+    margin: 1rem 0 0 0 !important;
+}
+
+#Home-Main #Presentation-Box > #Heading-Box p{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+#Home-Main #Presentation-Box > #Heading-Box{
+    max-width: 750px;
+    width: 750px;
+}
+
+#Home-Main #Presentation-Box > #Complement-Box{
+    width: calc(100% - 750px);
+    text-align: right;
+}
+
+#Home-Main #Presentation-Box > #Complement-Box img{
+    width: 100%;
+    max-width: 550px;
+}
+
+#Home-Main #Heading-Box .Feature-Box > :first-child,
+#Home-Main #Heading-Box .Feature-Box > :first-child > :first-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#Home-Main #Heading-Box .Feature-Box > :first-child > :first-child{
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    top: -1px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+}
+
+@media screen and (max-width: 768px){
+    #Home-Main{
+        padding: 1rem;
+    }
+
+    #Home-Main #Light-Blue-Blob-Box{
+        display: none;
+    }
+
+    #Home-Main #Heading-Box .Feature-Box{
+        width: 85%;
+        max-width: 85%;
+    }
+
+    #Home-Main #Heading-Box > div > :last-child{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    #Home-Main #Heading-Box .Feature-Box:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    #Home-Main #Heading-Box .Feature-Box > :first-child > :nth-child(2){
+        font-size: 1.4rem;
+    }
+
+    #Home-Main #Presentation-Box > #Heading-Box h1{
+        max-width: 80%;
+        line-height: unset;
+        font-size: 1.8rem;
+    }
+
+    #Home-Main #Presentation-Box > #Heading-Box p{
+        margin: 1rem 0 2rem;
+        font-size: .95rem;
+    }
+
+    #Home-Main #Presentation-Box{
+        margin: 1rem 0 0;
+        flex-wrap: unset;
+    }
+}

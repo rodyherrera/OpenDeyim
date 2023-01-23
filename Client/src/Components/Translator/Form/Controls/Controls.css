@@ -1,0 +1,64 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+.Translation-Controls{
+    color: rgba(0, 0, 0, 0.54);
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+    flex-wrap: wrap;
+}
+
+.Translation-Controls .Mui-disabled{
+    color: #ababab;
+}
+
+.Translation-Controls .MuiButtonBase-root{
+    font-size: 1.3rem !important;
+}
+
+@media screen and (max-width: 768px){
+    .Translation-Controls{
+        margin-bottom: 0;
+        position: unset;
+        padding: 0;
+        margin: 1rem 0;
+        flex-direction: column-reverse;
+    }
+
+    .Translation-Controls > :last-child{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Translation-Controls > :first-child{
+        margin-top: 1rem;
+    }
+}

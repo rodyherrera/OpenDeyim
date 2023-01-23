@@ -1,0 +1,218 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The OpenDeyim Source Code
+ * A free, modern, self-hosted and open source translation service that instantly 
+ * translates phrases, words and web pages into more than 30 languages. Use our 
+ * API or bindings and experiment with OpenDeyim.
+ * 
+ * For more information, please read the documentation inside 
+ * the <README.md> file which is located at the root of this directory or source code.
+ * 
+ * (www.github.com/codewithrodi/OpenDeyim/)
+ * 
+ * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Full Stack Software Developer.
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ****/
+ 
+#Translation-History-Box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 0 2rem;
+    align-items: flex-start;
+    height: 500px;
+    max-height: 500px;
+    width: 100%;
+}
+
+#Translation-History-Box > :first-child{
+    height: 100%;
+    width: 40%;
+}
+
+#Translation-History-Content{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#Translation-History .Record-Box{
+    padding: 1rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+#Translation-History-Content > :first-child{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 1rem;
+}
+
+#Translation-History{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+#Translation-History .Record-Box > :first-child{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+}
+
+#Translation-History .Record-Box .Record-Heading > :first-child{
+    font-size: 1.07rem;
+}
+
+#Translation-History .Record-Box .Record-Heading > :last-child,
+#Translation-History .Record-Box > :last-child > :last-child,
+#Translation-History-Stats-Box{
+    opacity: .8;
+}
+
+#Translation-History-Content > :first-child > h3{
+    font-size: 1.3rem;
+    margin-bottom: .7rem;
+}
+
+#Translation-History .Record-Box .Record-Heading > :last-child{
+    font-size: .95rem;
+}
+
+#Translation-History .Record-Box > :last-child{
+    margin-top: 1rem;
+}
+
+#Translation-History .Record-Box > :last-child > :last-child{
+    margin-top: .4rem;
+}
+
+#Translation-History-Content > #Translation-History-NExists,
+#Translation-History-Box > :first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Translation-History-Content > #Translation-History-NExists{
+    height: 70%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#Translation-History-Content > :first-child > h3{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+#Translation-History-Content > #Translation-History-NExists,
+#Translation-History-Stats-Box{
+    text-align: center;
+}
+
+#Translation-History-Stats-Box{
+    margin-top: 2rem;
+}
+
+
+#Translation-History-NExists{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#Translation-History{
+    overflow-y: scroll;
+    height: calc(443px - 140px);
+}
+
+#Translation-History .Record-Box{
+    opacity: .9;
+    font-size: .98rem;
+}
+
+#Translation-History .Record-Box:not(:last-child){
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#Translation-History .Record-Box > :last-child{
+    margin-top: .7rem;
+}
+
+#Translation-History .Record-Box > :last-child > :last-child{
+    opacity: .7;
+}
+
+@media screen and (max-width: 768px){
+    #Translation-History-Stats-Box{
+        margin: 1rem 0;
+    }
+
+    #Translation-History-Content > :first-child > h3{
+        margin-bottom: .5rem;
+        font-size: 1.4rem;
+    }
+
+    #Translation-History-Box{
+        flex-direction: column;
+        max-height: unset;
+        height: unset;
+        margin: 1rem 0 2rem;
+    }
+
+    #Translation-History-Content > :first-child{
+        padding-bottom: 2rem;
+    }
+
+    #Translation-History-Content{
+        margin-top: 3rem;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    #Translation-History{
+        max-height: 500px;
+    }
+    
+    #Translation-History-Content > #Translation-History-NExists{
+        margin: 1rem auto 0;
+        padding-bottom: 1rem;
+    }
+
+    #Translation-History-Box > :first-child,
+    #Translation-History-Content > #Translation-History-NExists,
+    #Translation-History-Content{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #Translation-History .Record-Box .Record-Heading > :first-child{
+        font-size: .95rem;
+        max-width: 85%;
+    }
+
+    #Translation-History .Record-Box:last-child{
+        border-bottom: none;
+    }
+
+    #Translation-History .Record-Box .Record-Heading > :last-child{
+        margin-top: .2rem;
+    }
+
+    #Translation-History .Record-Box > :last-child{
+        margin-top: .5rem;
+    }
+
+    #Translation-History .Record-Box > :last-child p,
+    #Translation-History .Record-Box .Record-Heading > :last-child{
+        font-size: .9rem;
+    }
+}
