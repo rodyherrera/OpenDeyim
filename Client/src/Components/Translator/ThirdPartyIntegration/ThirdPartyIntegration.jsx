@@ -39,7 +39,7 @@ const CODE_TEMPLATES = {
     REQUEST: `\
 (async function(){
     try{
-        const Response = (await (await fetch("${Infrastructure.Server}/api/v1/translate", {
+        const Response = (await (await fetch("${Infrastructure.Server}/translate", {
             method: "POST",
             body: JSON.stringify({
                 Query: "QUERY",
