@@ -77,7 +77,7 @@ class OpenDeyimAPI{
         std::string BaseURL;
 
     public:
-        OpenDeyimAPI(std::string LBaseURL = "deyimapi.codewithrodi.com") : BaseURL(LBaseURL){}
+        OpenDeyimAPI(std::string LBaseURL = "https://deyimapi.codewithrodi.com/api/v1") : BaseURL(LBaseURL){}
 
         json Translate(std::string Query, std::string Source = "auto", std::string Target = "en", std::string Format = "text"){
             std::string URL = BaseURL + "/translate";

@@ -27,7 +27,7 @@ from Binding import OpenDeyimAPI
 # ! Creating an instance of the class, where it receives as 
 # ! a parameter in its '__init__' the URL of the OpenDeyim 
 # ! server, which can be your self-hosted instance.
-DeyimAPI = OpenDeyimAPI('http://0.0.0.0:5000/api/v1')
+DeyimAPI = OpenDeyimAPI('https://deyimapi.codewithrodi.com/api/v1')
 
 # ! In this example, the '.Detect' method receives a 
 # ! String as a parameter, which will return another 

@@ -178,7 +178,7 @@ The content of this <.json> file is not significant, in fact, when you open it y
 ```javascript
 // [OpenDeyim/Client/src/Infrastructure.json]
 {
-    "Server": "http://0.0.0.0:5000/api/v1"
+    "Server": "https://deyimapi.codewithrodi.com/api/v1"
 }
 ```
 
@@ -223,7 +223,7 @@ from typing import Any, Dict
 from urllib import request, parse
 
 class OpenDeyimAPI:
-    DEFAULT_URL = 'deyimapi.codewithrodi.com'
+    DEFAULT_URL = 'https://deyimapi.codewithrodi.com/api/v1'
 
     def __init__(self, URL: str = None) -> None:
         self.URL = OpenDeyimAPI.DEFAULT_URL if URL is None else URL
@@ -262,7 +262,7 @@ from .Binding import OpenDeyimAPI
 # ! Creating an instance of the class, where it receives as 
 # ! a parameter in its '__init__' the URL of the OpenDeyim 
 # ! server, which can be your self-hosted instance.
-DeyimAPI = OpenDeyimAPI('http://0.0.0.0:5000/api/v1')
+DeyimAPI = OpenDeyimAPI('https://deyimapi.codewithrodi.com/api/v1')
 
 # ! In this example, the '.Detect' method receives a 
 # ! String as a parameter, which will return another 

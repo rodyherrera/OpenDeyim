@@ -24,7 +24,7 @@
 const Axios = require('axios');
 
 class OpenDeyimAPI{
-    BaseURL = 'deyimapi.codewithrodi.com';
+    BaseURL = 'https://deyimapi.codewithrodi.com/api/v1';
 
     constructor(InstanceURL){
         (InstanceURL) && (this.BaseURL = InstanceURL);

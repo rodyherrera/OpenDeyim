@@ -24,7 +24,7 @@ from typing import Any, Dict
 from urllib import request, parse
 
 class OpenDeyimAPI:
-    DEFAULT_URL = 'deyimapi.codewithrodi.com'
+    DEFAULT_URL = 'https://deyimapi.codewithrodi.com/api/v1'
 
     def __init__(self, URL: str = None) -> None:
         self.URL = OpenDeyimAPI.DEFAULT_URL if URL is None else URL

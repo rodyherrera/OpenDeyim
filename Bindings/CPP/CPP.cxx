@@ -35,7 +35,7 @@ int main(){
     // ! OpenDeyim self hosted server. The address of our server 
     // ! must be sent as a parameter to the constructor, otherwise 
     // ! the default server will be used.
-    OpenDeyimAPI DeyimAPI("http://0.0.0.0:5000/api/v1");
+    OpenDeyimAPI DeyimAPI("https://deyimapi.codewithrodi.com/api/v1");
     // ! Showing in the console the detected language of 
     // ! the content sent through the function.
     std::cout << DeyimAPI.Detect("Hello world") << std::endl;

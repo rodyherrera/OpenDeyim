@@ -28,7 +28,7 @@ const OpenDeyimAPI = require('./Binding');
     // ! parameter inside the class constructor, it receives 
     // ! the endpoint of your OpenDeyim self-hosted server, by 
     // ! default the server <opendeyim.codewithrodi.com> is assigned.
-    const DeyimAPI = new OpenDeyimAPI('http://0.0.0.0:5000/api/v1');
+    const DeyimAPI = new OpenDeyimAPI('https://deyimapi.codewithrodi.com/api/v1');
     // ! When executing any of the methods that are defined 
     // ! within the class that are:
     // * -> Detect({ Query });
