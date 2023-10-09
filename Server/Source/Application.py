@@ -28,7 +28,6 @@
 from functools import wraps
 from html import unescape
 from translatehtml import translate_html
-from werkzeug.exceptions import HTTPException
 from Source import Flood
 from Source.Language import DetectLanguages, ImproveTranslationFormatting
 from flask import (

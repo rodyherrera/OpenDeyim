@@ -34,12 +34,12 @@ setup(
     description = '',
     author = 'CodeWithRodi',
     author_email = 'contact@codewithrodi.com',
-    url = 'https://libretranslate.com',
+    url = 'https://opendeyim.codewithrodi.com',
     packages = find_packages(),
     include_package_data = True,
     entry_points = {
         'console_scripts': [
-            'libretranslate=Source.Main:Main',
+            'opendeyim=Source.Main:Main',
             'ltmanage=Source.Manage:Manage',
         ]
     },

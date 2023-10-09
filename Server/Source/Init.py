@@ -25,7 +25,6 @@
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-from pathlib import Path
 from argostranslate import package, translate
 import Source.Language
 
@@ -52,14 +51,12 @@ def CheckAndInstallModels(Force = False, LoadOnlyLangCodes = None) -> None:
             AvailablePackages = [
                 Pack for Pack in AvailablePackages
                 if Pack.from_code in LoadOnlyLangCodes and Pack.to_code in LoadOnlyLangCodes]
-
             if not AvailablePackages:
                 raise ValueError('No available package')
             print(':-: Keep %s models' % len(AvailablePackages))
         
         for AvailablePackage in AvailablePackages:
             print(':-: Downloading %s (%s)...' % (AvailablePackage, AvailablePackage.package_version))
-            DownloadPath = AvailablePackage.download()
-            package.install_from_path(DownloadPath)
+            AvailablePackage.install()
         Source.Language.Languages = translate.get_installed_languages()
         print(f':-: Loaded support for {len(translate.get_installed_languages())} ({len(AvailablePackages)} models total)!')

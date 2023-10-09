@@ -25,15 +25,13 @@
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-argostranslate==1.7.0
+argostranslate==1.7.5
 Flask==2.2.2
 waitress==2.1.2
+LTpycld2==0.42
 APScheduler==3.9.1
 translatehtml==1.5.2
-argos-translate-files==1.1.0
+argos-translate-files==1.1.1
 Werkzeug==2.2.2
-LTpycld2==0.42
-gunicorn==20.1.0
 prometheus-client==0.15.0
-libretranslate==1.3.8
-ctranslate2==2.24.0
+gunicorn==20.1.0

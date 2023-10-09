@@ -25,8 +25,6 @@
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-import string
-
 from argostranslate import translate
 from Source.Detect import Detector, UnknownLanguage
 
