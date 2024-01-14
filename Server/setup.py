@@ -18,9 +18,9 @@
 # * of its publication, is completely misaligned With updates or implementations that 
 # * LibreTranslate eventually receives, OpenDeyim does not claim to be a copy of it.
 # * 
-# * (www.github.com/codewithrodi/OpenDeyim/)
+# * (www.github.com/rodyherrera/OpenDeyim/)
 # * 
-# * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+# * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
 # * Full Stack Software Developer.
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -32,9 +32,9 @@ setup(
     name = 'OpenDeyim',
     license = 'MIT',
     description = '',
-    author = 'CodeWithRodi',
-    author_email = 'contact@codewithrodi.com',
-    url = 'https://opendeyim.codewithrodi.com',
+    author = 'rodyherrera',
+    author_email = 'contact@rodyherrera.com',
+    url = 'https://opendeyim.rodyherrera.com',
     packages = find_packages(),
     include_package_data = True,
     entry_points = {

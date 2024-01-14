@@ -12,9 +12,9 @@
 # * For more information, please read the documentation inside 
 # * the <README.md> file which is located at the root of this directory or source code.
 # * 
-# * (www.github.com/codewithrodi/OpenDeyim/)
+# * (www.github.com/rodyherrera/OpenDeyim/)
 # * 
-# * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+# * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
 # * Full Stack Software Developer.
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -27,7 +27,7 @@ from Binding import OpenDeyimAPI
 # ! Creating an instance of the class, where it receives as 
 # ! a parameter in its '__init__' the URL of the OpenDeyim 
 # ! server, which can be your self-hosted instance.
-DeyimAPI = OpenDeyimAPI('https://deyimapi.codewithrodi.com/api/v1')
+DeyimAPI = OpenDeyimAPI('https://deyimapi.rodyherrera.com/api/v1')
 
 # ! In this example, the '.Detect' method receives a 
 # ! String as a parameter, which will return another 

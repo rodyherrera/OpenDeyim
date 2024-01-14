@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -77,7 +77,7 @@ class OpenDeyimAPI{
         std::string BaseURL;
 
     public:
-        OpenDeyimAPI(std::string LBaseURL = "https://deyimapi.codewithrodi.com/api/v1") : BaseURL(LBaseURL){}
+        OpenDeyimAPI(std::string LBaseURL = "https://deyimapi.rodyherrera.com/api/v1") : BaseURL(LBaseURL){}
 
         json Translate(std::string Query, std::string Source = "auto", std::string Target = "en", std::string Format = "text"){
             std::string URL = BaseURL + "/translate";

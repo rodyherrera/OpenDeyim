@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -35,7 +35,7 @@ int main(){
     // ! OpenDeyim self hosted server. The address of our server 
     // ! must be sent as a parameter to the constructor, otherwise 
     // ! the default server will be used.
-    OpenDeyimAPI DeyimAPI("https://deyimapi.codewithrodi.com/api/v1");
+    OpenDeyimAPI DeyimAPI("https://deyimapi.rodyherrera.com/api/v1");
     // ! Showing in the console the detected language of 
     // ! the content sent through the function.
     std::cout << DeyimAPI.Detect("Hello world") << std::endl;

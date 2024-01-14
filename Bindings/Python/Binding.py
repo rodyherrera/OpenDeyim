@@ -12,9 +12,9 @@
 # * For more information, please read the documentation inside 
 # * the <README.md> file which is located at the root of this directory or source code.
 # * 
-# * (www.github.com/codewithrodi/OpenDeyim/)
+# * (www.github.com/rodyherrera/OpenDeyim/)
 # * 
-# * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+# * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
 # * Full Stack Software Developer.
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -24,7 +24,7 @@ from typing import Any, Dict
 from urllib import request, parse
 
 class OpenDeyimAPI:
-    DEFAULT_URL = 'https://deyimapi.codewithrodi.com/api/v1'
+    DEFAULT_URL = 'https://deyimapi.rodyherrera.com/api/v1'
 
     def __init__(self, URL: str = None) -> None:
         self.URL = OpenDeyimAPI.DEFAULT_URL if URL is None else URL

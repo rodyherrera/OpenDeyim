@@ -1,9 +1,9 @@
 ## OpenDeyim - Self-Hosted Translation Software.
-[Visit the public DEMO of the software.](https://opendeyim.codewithrodi.com/)
+[Visit the public DEMO of the software.](https://opendeyim.rodyherrera.com/)
 
 OpenDeyim is a modern open source translation software, capable of self-hosting. This is built with two technologies, these being ReactJS and Python creating separate environments for their respective development, likewise, giving the end user an enriched experience before the React application.
 
-![Presentation of the platform](https://github.com/CodeWithRodi/OpenDeyim/blob/main/Screenshots/Presentation.png?raw=true)
+![Presentation of the platform](https://github.com/rodyherrera/OpenDeyim/blob/main/Screenshots/Presentation.png?raw=true)
 
 The development of this platform arises through the abstract art that encompasses the sharing of ideas and knowledge between the different cultures that lie in the world; Inspired by open-source, collaboration and teamwork, taking good ideas and improving them even more in a systematic and progressive way, in order to serve as a great source of inspiration.
 
@@ -61,7 +61,7 @@ Once you have <python3>, with <pip>, you shouldn't have any issues installing th
 ```bash
 # Cloning the repository that contains 
 # the OpenDeyim source code.
-git clone https://github.com/codewithrodi/OpenDeyim
+git clone https://github.com/rodyherrera/OpenDeyim
 
 # Accessing the generated directory 
 # after cloning the repository
@@ -92,7 +92,7 @@ python3 Utilities/InstallModels.py
 Next, you have the series of commands exactly the same as the previous one, but with the difference that it is in only one line, so you only have to copy and paste it in your terminal to execute the processes; Sure, in case you don't want to follow the step by step.
 
 ```bash
-git clone https://github.com/codewithrodi/OpenDeyim && cd OpenDeyim && cd Client/ && npm install --force && cd ../Server && pip install -e . && python3 Utilities/InstallModels.py
+git clone https://github.com/rodyherrera/OpenDeyim && cd OpenDeyim && cd Client/ && npm install --force && cd ../Server && pip install -e . && python3 Utilities/InstallModels.py
 ```
 
 ## Starting and configuring the back-end server
@@ -155,7 +155,7 @@ python3 Main.py --Host 0.0.0.0 --Port 5000
 ```
 As you can see, we are assigning two arguments to the file call, which belong to <Host> and <Port> that were explained earlier in the table.
     
-![Normal execution of the server using Python3](https://github.com/CodeWithRodi/OpenDeyim/blob/main/Screenshots/Generic-Server-Start.png?raw=true)
+![Normal execution of the server using Python3](https://github.com/rodyherrera/OpenDeyim/blob/main/Screenshots/Generic-Server-Start.png?raw=true)
 
 Next, you will be presented with an example of how to execute the server using <gunicorn> by passing arguments to the call.
 
@@ -164,7 +164,7 @@ gunicorn --bind 0.0.0.0:5000 --workers=5 --threads=5 --worker-class=gthread -c U
 ```
 In this case, in the example we are assigning two values to variables, where the first is <FrontendLanguageSource> while the second is <FrontendLanguageTarget>, both of which were explained in the table previously presented with all the available arguments.
 
-![Starting server in production using <gunicorn>](https://github.com/CodeWithRodi/OpenDeyim/blob/main/Screenshots/Gunicorn-Server-Start.png?raw=true)
+![Starting server in production using <gunicorn>](https://github.com/rodyherrera/OpenDeyim/blob/main/Screenshots/Gunicorn-Server-Start.png?raw=true)
 
 ## Starting and configuring the front-end server
 We have previously learned how to start and configure our back-end server written in Python, now it is the turn of our front-end server which is written in ReactJS.
@@ -180,7 +180,7 @@ The content of this <.json> file is not significant, in fact, when you open it y
 ```javascript
 // [OpenDeyim/Client/src/Infrastructure.json]
 {
-    "Server": "https://deyimapi.codewithrodi.com/api/v1"
+    "Server": "https://deyimapi.rodyherrera.com/api/v1"
 }
 ```
 
@@ -201,7 +201,7 @@ npm run start
 ```
 Once the ReactJS application has been installed and initialized, as well as you have previously correctly configured the endpoint of the application to your server, it should be working without complications.
 
-![View of the main page through the computer](https://github.com/CodeWithRodi/OpenDeyim/blob/main/Screenshots/Desktop/Home-Page.png?raw=true)
+![View of the main page through the computer](https://github.com/rodyherrera/OpenDeyim/blob/main/Screenshots/Desktop/Home-Page.png?raw=true)
 
 ## Introducing the API bindings
 Previously, as you were told, OpenDeyim is divided into two parts, its Backend and its Frontend, being the Backend the one that provides a public API to be consumed from the Frontend as well as from tertiary clients.
@@ -225,7 +225,7 @@ from typing import Any, Dict
 from urllib import request, parse
 
 class OpenDeyimAPI:
-    DEFAULT_URL = 'https://deyimapi.codewithrodi.com/api/v1'
+    DEFAULT_URL = 'https://deyimapi.rodyherrera.com/api/v1'
 
     def __init__(self, URL: str = None) -> None:
         self.URL = OpenDeyimAPI.DEFAULT_URL if URL is None else URL
@@ -264,7 +264,7 @@ from .Binding import OpenDeyimAPI
 # ! Creating an instance of the class, where it receives as 
 # ! a parameter in its '__init__' the URL of the OpenDeyim 
 # ! server, which can be your self-hosted instance.
-DeyimAPI = OpenDeyimAPI('https://deyimapi.codewithrodi.com/api/v1')
+DeyimAPI = OpenDeyimAPI('https://deyimapi.rodyherrera.com/api/v1')
 
 # ! In this example, the '.Detect' method receives a 
 # ! String as a parameter, which will return another 
@@ -319,7 +319,7 @@ while True:
 # *                     HTML, you must reassign the value of <Format>.
 ```
 
-![View of the main page through the computer](https://github.com/CodeWithRodi/OpenDeyim/blob/main/Screenshots/Python-Binding.png?raw=true)
+![View of the main page through the computer](https://github.com/rodyherrera/OpenDeyim/blob/main/Screenshots/Python-Binding.png?raw=true)
 
 ## Installing or updating the models for the translation.
 Previously, in the respective section where we installed this software, we have gone through the instructions to install the models required to run the translations satisfactorily once our back-end is mounted both locally and in production within the network.
@@ -332,7 +332,7 @@ python3 Utilities/InstallModels.py
 ```
 Note that these models are related to the Python library defined as <Argos Translate>, and that once the models are downloaded they will be stored in the "/home/$USER/.local/" folder, where, inside from "share/" and "cache/" you can find related data.
 
-![Argos Translate Data](https://github.com/CodeWithRodi/OpenDeyim/blob/main/Screenshots/Argos-Translate-Data.png?raw=true)
+![Argos Translate Data](https://github.com/rodyherrera/OpenDeyim/blob/main/Screenshots/Argos-Translate-Data.png?raw=true)
 
 If you remove any of the folders identified as "argos-translate" from the above named and illustrated directories, the translation templates will be removed, so you will need to install them again.
 

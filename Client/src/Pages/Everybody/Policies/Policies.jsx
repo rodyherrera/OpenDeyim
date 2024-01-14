@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -36,9 +36,9 @@ const PoliciesPage = () => {
     const [Width] = UseWindowSize();
     const ExternalReferences = [
         // ! [TITLE, LINK, ICON]
-        ['Docs', 'https://github.com/CodeWithRodi/OpenDeyim', <VscGithubAlt />],
-        ['License', 'https://github.com/CodeWithRodi/OpenDeyim', <TbLicense />],
-        ['CodexDrake', 'https://github.com/CodeWithRodi/CodexDrake', <TfiBook />],
+        ['Docs', 'https://github.com/rodyherrera/OpenDeyim', <VscGithubAlt />],
+        ['License', 'https://github.com/rodyherrera/OpenDeyim', <TbLicense />],
+        ['CodexDrake', 'https://github.com/rodyherrera/CodexDrake', <TfiBook />],
         ['ArgosTranslate', 'https://github.com/argosopentech/argos-translate', <TbEngine />],
         ['LibreTranslate', 'https://github.com/LibreTranslate/LibreTranslate', <MdOutlineTranslate />],
         ['React Speech', 'https://www.npmjs.com/package/react-speech-kit', <HiOutlineSpeakerWave />]

@@ -18,9 +18,9 @@
 # * of its publication, is completely misaligned With updates or implementations that 
 # * LibreTranslate eventually receives, OpenDeyim does not claim to be a copy of it.
 # * 
-# * (www.github.com/codewithrodi/OpenDeyim/)
+# * (www.github.com/rodyherrera/OpenDeyim/)
 # * 
-# * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+# * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
 # * Full Stack Software Developer.
 # *
 # * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

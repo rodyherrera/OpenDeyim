@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -27,8 +27,8 @@ const OpenDeyimAPI = require('./Binding');
     // ! Creating a new instance of the API implementation, as a 
     // ! parameter inside the class constructor, it receives 
     // ! the endpoint of your OpenDeyim self-hosted server, by 
-    // ! default the server <opendeyim.codewithrodi.com> is assigned.
-    const DeyimAPI = new OpenDeyimAPI('https://deyimapi.codewithrodi.com/api/v1');
+    // ! default the server <opendeyim.rodyherrera.com> is assigned.
+    const DeyimAPI = new OpenDeyimAPI('https://deyimapi.rodyherrera.com/api/v1');
     // ! When executing any of the methods that are defined 
     // ! within the class that are:
     // * -> Detect({ Query });

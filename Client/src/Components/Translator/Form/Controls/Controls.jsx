@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -72,7 +72,7 @@ const Controls = ({ For = '', Getter, Setter = () => {}, Language = '', Disabled
     ];
 
     const RedirectToCodexDrakeSearch = (Query, Type = 'All') =>
-        window.open(`https://codexdrake.codewithrodi.com/search?Query=${Query}&Type=${Type}`, '_blank');
+        window.open(`https://codexdrake.rodyherrera.com/search?Query=${Query}&Type=${Type}`, '_blank');
 
     return (
         <div className='Translation-Controls'>

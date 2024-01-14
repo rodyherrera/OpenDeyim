@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -24,7 +24,7 @@
 const Axios = require('axios');
 
 class OpenDeyimAPI{
-    BaseURL = 'https://deyimapi.codewithrodi.com/api/v1';
+    BaseURL = 'https://deyimapi.rodyherrera.com/api/v1';
 
     constructor(InstanceURL){
         (InstanceURL) && (this.BaseURL = InstanceURL);

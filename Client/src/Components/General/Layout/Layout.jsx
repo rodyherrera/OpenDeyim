@@ -13,9 +13,9 @@
  * For more information, please read the documentation inside 
  * the <README.md> file which is located at the root of this directory or source code.
  * 
- * (www.github.com/codewithrodi/OpenDeyim/)
+ * (www.github.com/rodyherrera/OpenDeyim/)
  * 
- * Rodolfo Herrera Hernandez <contact@codewithrodi.com>.
+ * Rodolfo Herrera Hernandez <contact@rodyherrera.com>.
  * Full Stack Software Developer.
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -35,7 +35,7 @@ const Layout = () => {
     const Navigate = useNavigate();
     const Links = [
         // ! [TITLE, ICON, LINK, ISLOCAL]
-        ['Source code', <FiGithub />, 'https://github.com/codewithrodi/OpenDeyim'],
+        ['Source code', <FiGithub />, 'https://github.com/rodyherrera/OpenDeyim'],
         ['Terms and policy of use', <RiLockPasswordLine />, '/terms-and-policies-of-use', true]
     ];
 
